@@ -1,3 +1,6 @@
+This is an outdated and unsupported version. It is suggested to use never one instead:<br />
+https://github.com/nobodysu/zabbix-mini-IPMI
+
 # mini-IPMI
 ## Features
 CPU and disk temperature monitoring scripts for zabbix. Also support voltage and fan speed monitoring on certain configurations. Uses lm-sensors, smartmontools and OpenHardwareMonitorReport. For Linux, BSD and Windows.<br />
