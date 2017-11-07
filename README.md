@@ -1,4 +1,4 @@
-This is an outdated and unsupported version. It is suggested to use never one instead:<br />
+This is an outdated and unsupported version. It is suggested to use newer one instead:<br />
 https://github.com/nobodysu/zabbix-mini-IPMI
 
 # mini-IPMI
