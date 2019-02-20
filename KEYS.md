@@ -12,7 +12,6 @@
 |mini.brd.vlt[_N_]|mini_ipmi_ohmr.py, mini_ipmi_lmsensors.py|
 |mini.cpu.info[ConfigStatus]| mini_ipmi_ohmr.py, mini_ipmi_lmsensors.py, mini_ipmi_bsdcpu.py|
 |mini.cpu.temp[MAX]|mini_ipmi_ohmr.py, mini_ipmi_lmsensors.py, mini_ipmi_bsdcpu.py|
-|mini.gpu.temp[MAX]|mini_ipmi_ohmr.py, mini_ipmi_lmsensors.py|
 |mini.info[OHMRver]| mini_ipmi_ohmr.py|
 |mini.brd.fan[{#BRDFANNUM},rpm]|mini_ipmi_ohmr.py, mini_ipmi_lmsensors.py|
 |mini.brd.temp[{#BRDTEMPNUM}]|mini_ipmi_ohmr.py, mini_ipmi_lmsensors.py|
@@ -30,14 +29,3 @@
 |	mini.cpu.info[cpu{#CPU},TjMax]|mini_ipmi_ohmr.py, mini_ipmi_lmsensors.py|
 |mini.cpu.temp[cpu{#CPUC},core{#CORE}]|mini_ipmi_ohmr.py, mini_ipmi_lmsensors.py, mini_ipmi_bsdcpu.py|
 |mini.cpu.temp[cpu{#CPU},MAX]|mini_ipmi_ohmr.py, mini_ipmi_lmsensors.py, mini_ipmi_bsdcpu.py|
-|	mini.gpu.fan[gpu{#GPUFAN},rpm]|mini_ipmi_ohmr.py|
-|mini.gpu.info[gpu{#GPU},GPUstatus]|mini_ipmi_ohmr.py|
-|mini.gpu.info[gpu{#GPU},ID]|mini_ipmi_ohmr.py, mini_ipmi_lmsensors.py|
-|mini.gpu.memory[gpu{#GPUMEM},free]|mini_ipmi_ohmr.py|
-|mini.gpu.memory[gpu{#GPUMEM},total]|mini_ipmi_ohmr.py|
-|mini.gpu.memory[gpu{#GPUMEM},used]|mini_ipmi_ohmr.py|
-|mini.gpu.temp[gpu{#GPUTEMP}]|mini_ipmi_ohmr.py, mini_ipmi_lmsensors.py|
-|mini.disk.info[ConfigStatus]|mini_ipmi_smartctl.py|
-|mini.disk.info[{#DISK},DriveStatus]|mini_ipmi_smartctl.py|
-|mini.disk.temp[{#DISK}]|mini_ipmi_smartctl.py|
-|mini.disk.temp[MAX]|mini_ipmi_smartctl.py|
