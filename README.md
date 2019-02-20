@@ -1,5 +1,5 @@
 # zabbix-mini-IPMI
-CPU temperature monitoring scripts for zabbix. Also support voltage and fan speed monitoring on certain configurations. Uses `lm-sensors`, `smartmontools` and `OpenHardwareMonitorReport`. For Linux, BSD and Windows.
+CPU temperature monitoring scripts for zabbix. Also support voltage and fan speed monitoring on certain configurations. Uses `lm-sensors`, and `OpenHardwareMonitorReport`. For Linux, BSD and Windows.
 
 ## Features
 
@@ -7,10 +7,6 @@ CPU temperature monitoring scripts for zabbix. Also support voltage and fan spee
 - Low-Level Discovery
 - Bulk item upload with zabbix-sender
 - No unnecessary processes are spawned
-
-![Temperature graph](https://github.com/nobodysu/mini-IPMI/blob/master/screenshots/mini-IPMI-graph.png?raw=true)
-
-[More screenshots.](https://github.com/nobodysu/zabbix-mini-IPMI/tree/master/screenshots)
 
 ### Choosing OHMR version
 #### [0.3.2.0](https://github.com/openhardwaremonitor/openhardwaremonitor/issues/230#issue-102662845)
@@ -27,11 +23,13 @@ Take a look at scripts first lines and provide paths if needed. Import `Template
 ### First step
 #### Linux
 ```bash
+mv Linux/mini_ipmi_lmsensors.py sender_wrapper.py /etc/zabbix/scripts/
 mv userparameter_mini-ipmi2.conf /etc/zabbix/zabbix_agentd.d/
 ```
 
 #### FreeBSD
 ```bash
+mv mini_ipmi_bsdcpu.py sender_wrapper.py /etc/zabbix/scripts/
 mv userparameter_mini-ipmi2.conf /usr/local/etc/zabbix/zabbix_agentd.d/
 ```
 Then, for Intel processor you need to add `coretemp_load="YES"` to `/boot/loader.conf`. For AMD it will be `amdtemp_load="YES"`. Reboot or manual `kldload` is required to take effect.
